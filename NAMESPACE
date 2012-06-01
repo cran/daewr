@@ -1,0 +1,17 @@
+# Default NAMESPACE created by R
+# Remove the previous line if you edit this file
+
+# Export all names
+#exportPattern(".")
+export(Fcrit,
+       Fpower,
+	   Gaptest,
+	   gapstat,
+	   LGB,
+	   Tukey1df,
+	   vci,
+	   BIBsize,
+	   mod,
+	   fullnormal,
+	   Altscreen
+	   )
