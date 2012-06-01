@@ -116,4 +116,3 @@ function (Beta, alpha = 0.05, rpt = TRUE, plt = TRUE, pltl = TRUE)
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{htest}
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

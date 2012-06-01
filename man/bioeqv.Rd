@@ -10,8 +10,8 @@ of Experiments with R
 \format{
   A data frame with 9 observations on the following 4 variables.
   \describe{ 
-	\item{\code{Period}}{a factor with levels \code{1} \code{2} code{3}}  
-	\item{\code{Subject}}{a factor with levels \code{1} \code{2} code{3}}
+	\item{\code{Period}}{a factor with levels \code{1} \code{2} \code{3}}  
+	\item{\code{Subject}}{a factor with levels \code{1} \code{2} \code{3}}
 	\item{\code{Treat}}{a factor with levels \code{A} \code{B}  \code{C}}
 	\item{\code{AUC}}{a numeric vector }
   }

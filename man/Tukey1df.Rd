@@ -20,9 +20,9 @@ John Lawson
 }
 
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+library(daewr)
+data(virus)
+Tukey1df(virus)
 
 ## The function is currently defined as
 function (data) 

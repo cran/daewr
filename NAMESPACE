@@ -13,5 +13,7 @@ export(Fcrit,
 	   BIBsize,
 	   mod,
 	   fullnormal,
-	   Altscreen
+	   Altscreen,
+	   ModelRobust,
+	   OptPB
 	   )
