@@ -32,7 +32,7 @@ John Lawson
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
-# Example Separate Normal plots of whole and split plot effects from an un replicated split-plot design
+# Example Separate Normal plots of whole and split plot effects from an unreplicated split-plot 
 data(plasma)
 sol<-lm(y~A*B*C*D*E,data=plasma)
 summary(sol)

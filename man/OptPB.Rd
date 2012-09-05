@@ -5,11 +5,12 @@
 model dependence for main effects and two factor interactions
 }
 \usage{
-OptPB(nruns, nfactors)
+OptPB(nruns, nfactors, randomize=FALSE)
 }
 \arguments{
   \item{nruns}{ input- an integer representing the number of runs in the design} 
   \item{nfactors}{input - in integer representing the number of factors in the design} 
+  \item{randomize}{input - logical}
 }
 
 \value{ design

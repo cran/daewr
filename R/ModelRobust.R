@@ -1,6 +1,4 @@
-ModelRobust <- function(des='') {
-library(daewr)
-#MR8m4g3<-MR8m5g2<-MR8m6g1<-MR12m5g5<-MR12m6g5<-MR12m7g4<-MR12m8g3<-MR12m9g2<-MR16m7g5<-MR16m8g5<-MR16m9g5<-MR16m10g3 <- NULL # sets variables to null value first 
+ModelRobust <- function(des='',randomize=FALSE) {
   if (des=='')  {
 cat(" ", "\n")
 cat("       Model Robust Factorial Designs","\n")
@@ -26,29 +24,108 @@ cat(format("MR16m9g5", width=11),format("   16",width=7),format(" 9",width=8),fo
 cat(format("MR16m10g3", width=11),format("   16",width=7),format("10",width=8),format("    3",width=13),"\n")
 cat(" ","\n")
 cat("==> to retrieve a design type ModelRobust('MR8m4g3') etc.","\n")
-         } else if (des=='MR8m4g3') {data(MR8m4g3)
-                                    MR8m4g3
-         } else if(des=='MR8m5g2') {data(MR8m5g2)
-                                   MR8m5g2
-         } else if(des=='MR8m6g1') {data(MR8m6g1)
-                                   MR8m6g1
-         } else if(des=='MR12m5g5') {data(MR12m5g5)
-                                    MR12m5g5
-         } else if(des=='MR12m6g5') {data(MR12m6g5)
-                                    MR12m6g5
-         } else if(des=='MR12m7g4') {data(MR12m7g4)
-                                    MR12m7g4
-         } else if(des=='MR12m8g3') {data(MR12m8g3)
-                                    MR12m8g3
-         } else if(des=='MR12m9g2') {data(MR12m9g2)
-                                    MR12m9g2
-         } else if(des=='MR16m7g5') {data(MR16m7g5)
-                                    MR16m7g5
-         } else if(des=='MR16m8g5') {data(MR16m8g5)
-                                    MR16m8g5
-         } else if(des=='MR16m9g5') {data(MR16m9g5)
-                                    MR16m9g5
-         } else if(des=='MR16m10g3') {data(MR16m10g3)
-                                    MR16m10g3
-         } else cat(" Design name misspelled","\n")
+         } else if (des=='MR8m4g3') {v <- c(1,  3,  6,  7, 10, 11, 14, 16)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(4, 5, 8, 1, 3, 2, 6, 7)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:8)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:8), ]}
+                                     return(MR)
+         } else if(des=='MR8m5g2') { v <- c(1,  6, 12, 15, 19, 22, 25, 32)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(4, 1, 5, 8, 3, 7, 2, 6)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:8)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:8), ]}
+                                     return(MR)
+         } else if(des=='MR8m6g1') { v <- c(8, 11, 21, 30, 34, 47, 52, 57)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(5, 4, 7, 3, 1, 2, 8, 6)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:8)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:8), ]}
+                                     return(MR)                                   
+         } else if(des=='MR12m5g5') {v <- c(3,  6, 10, 11, 13, 15, 18, 19, 21, 24, 28, 30)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(10, 6, 4, 9, 1, 5, 7, 8, 2, 3, 12, 11)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:12)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:12), ]}
+                                     return(MR)                                   
+         } else if(des=='MR12m6g5') {v <- c(3, 10, 13, 16, 18, 31, 34, 39, 52, 53, 59, 62)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(1, 12, 3, 4, 11, 6, 9, 7, 2, 10, 8, 5)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:12)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:12), ]}
+                                     return(MR)           
+         } else if(des=='MR12m7g4') {v <- c(3,  14,  18,  38,  44,  63,  74,  84,  85, 111, 119, 121)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(4, 10, 8, 7, 11, 3, 1, 2, 9, 5, 12, 6)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:12)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:12), ]}
+                                     return(MR)     
+         } else if(des=='MR12m8g3') {v <- c(32,  55,  77,  81, 106, 127, 129, 140, 150, 180, 232, 233)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1),H=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(10, 5, 1, 2, 3, 9, 6, 12, 7, 8, 4, 11)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:12)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:12), ]}
+                                     return(MR)  
+         } else if(des=='MR12m9g2') {v <- c(31,  65, 104, 173, 204, 242, 262, 308, 345, 425, 448, 471)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1),H=c(-1,1), J=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(11, 3, 8, 4, 1, 6, 2, 10, 9, 5, 7, 12)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:12)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:12), ]}
+                                     return(MR)  
+
+         } else if(des=='MR16m7g5') {v <- c(4,   8,  15,  25,  43,  45,  54,  55,  65,  75,  85,  90, 101, 116, 121, 128)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(8, 5, 4, 16, 11, 12, 1, 3, 14, 9, 7, 10, 13, 6, 2, 15)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:16)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:16), ]}
+                                     return(MR)  
+
+         } else if(des=='MR16m8g5') {v <- c(6,  17,  32,  46,  77,  88, 116, 123, 141, 162, 171, 183, 195, 218, 240, 241)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1),H=c(-1,1),J=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(8, 3, 15, 1, 16, 14, 11, 2, 9, 4, 13, 7, 6, 5, 10, 12)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:16)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:16), ]}
+                                     return(MR)  
+
+         } else if(des=='MR16m9g5') {v <- c(34,  47,  62,  76,  93, 116, 151, 230, 269, 323, 394, 425, 436, 465, 472, 511)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1),H=c(-1,1),J=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(14, 13,  1,  6,  5,  9, 11,  3,  2, 12, 10,  7, 16,  4, 15,  8)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:16)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:16), ]}
+                                     return(MR)  
+
+         } else if(des=='MR16m10g3') {v <- c(5,   28,  223,  249,  291,  334,  344,  491,  539,  613,  656,  756,  822,  898,  942, 1009)
+                                     Full <-expand.grid(A=c(-1,1),B=c(-1,1),C=c(-1,1),D=c(-1,1),E=c(-1,1),F=c(-1,1),G=c(-1,1),H=c(-1,1),J=c(-1,1),K=c(-1,1))
+                                     MR <- Full[v, ]
+                                     v2 <- c(7,  8, 11, 16, 10, 12, 13,  3,  5, 14,  1,  4, 15,  2,  6,  9)
+                                     MR <- MR[v2, ]
+                                     rownames(MR)<- c(1:16)
+                                     if (randomize==TRUE) {MR <- MR[sample(1:16), ]}
+                                     return(MR)  
+
+         } else cat(" Design name misspelled-Enter ModelRobust() to display list of names","\n")
                  }
+
+

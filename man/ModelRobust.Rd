@@ -4,11 +4,12 @@
 \description{ Recalls Li and Nachtsheim's model robust factorial designs from a catalog of data frames
 }
 \usage{
-ModelRobust(des)
+ModelRobust(des, randomize=FALSE)
 }
 \arguments{
   \item{des}{input- a character variable containing the name of a design in the catalog. If left blank, the function prints a table
   showing all the design names in the catalog} 
+  \item{randomize}{input- a logical} 
 }
 
 \value{ design
@@ -23,5 +24,6 @@ John Lawson
 \examples{
 ModelRobust()
 ModelRobust('MR8m4g3')
+ModelRobust('MR8m4g3', randomize=TRUE)
      }
 \keyword{ datagen }

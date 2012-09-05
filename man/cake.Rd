@@ -8,7 +8,7 @@ of Experiments with R
 }
 \usage{data(cake)}
 \format{
-  A data frame with 11 observations on the following 4 variables.
+  A data frame with 11 observations on the following 6 variables.
   \describe{ 
  	\item{\code{Ovenrun}}{a factor with levels \code{1} \code{2} \code{3} \code{4}}
 	\item{\code{x1}}{a numeric vector }
