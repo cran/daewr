@@ -21,7 +21,7 @@ CT<-(sum(y)^2)/(a*b)
 ssA<-sum(sba^2/b)-CT
 ssB<-sum(sbb^2/a)-CT
 ssE<-sum(y^2)-CT-ssA-ssB
-ybdj<-rep(ybb,6)
+ybdj<-rep(ybb,a)
 prody<-y*ybdj
 sumprod<-tapply(prody,Afactor,sum)
 leftsum<-sum(sumprod*yba)

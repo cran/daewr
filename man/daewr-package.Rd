@@ -28,6 +28,6 @@ J. Lawson, Design and Analysis of Experiments with R, CRC 2013.
 \keyword{ package }
 \examples{
 Fcrit(.05,2,15)
-Fpower(0.05,2,15,6.428)
+Fpower1(alpha=.05,nlev=3,nreps=4,Delta=3,sigma=sqrt(2.1))
 BIBsize(6,3)
 }

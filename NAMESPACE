@@ -5,26 +5,39 @@
 #exportPattern(".")
 export(Fcrit,
        Fpower,
-	   Gaptest,
-	   gapstat,
-	   LGB,
-	   Tukey1df,
-	   vci,
-	   BIBsize,
-	   mod,
-	   fullnormal,
-	   Altscreen,
-	   ModelRobust,
-	   DefScreen,
-	   OptPB,
-	   EEw1s1,
-	   EEw1s2,
-	   EEw1s3,
-	   EEw2s1,
-	   EEw2s2,
-	   EEw2s3,
-	   EEw3,
-	   ihstep,
-	   fhstep,
-	   bstep
+       Fpower1,
+       Fpower2,
+	     Gaptest,
+	     gapstat,
+	     LGB,
+       LGBc,
+	     Tukey1df,
+	     vci,
+	     BIBsize,
+	     mod,
+	     fullnormal,
+       halfnorm,
+	     Altscreen,
+	     ModelRobust,
+	     DefScreen,
+	     OptPB,
+	     EEw1s1,
+	     EEw1s2,
+	     EEw1s3,
+	     EEw2s1,
+	     EEw2s2,
+	     EEw2s3,
+	     EEw3,
+	     ihstep,
+	     fhstep,
+	     bstep,
+       colormap
 	   )
+import(lattice)
+importFrom(FrF2,DanielPlot)
+importFrom(FrF2, IAPlot)
+importFrom(FrF2, MEPlot)
+importFrom(FrF2, pb)
+importFrom(FrF2, FrF2)
+importFrom(BsMD, BsProb)
+importFrom(BsMD, LenthPlot)

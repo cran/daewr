@@ -11,9 +11,9 @@ of Experiments with R
   A data frame with 16 observations on the following 3 variables.
   \describe{
     \item{\code{y}}{a numeric vector }
-    \item{\code{XA}}{a numeric vector containing the coded levels (-1,1) of factor A}
-    \item{\code{XB}}{a numeric vector containing the coded levels (-1,1) of factor B}
-	\item{\code{XC}}{a numeric vector containing the coded levels (-1,1) of factor C}
+    \item{\code{A}}{a factor containing the levels (22, 32) of factor A}
+    \item{\code{B}}{a factor containing the levels (0.5, 5.0) of factor B}
+    \item{\code{C}}{a factor containing the levels (0.5, 5.0) of factor C}
   }
 }
 

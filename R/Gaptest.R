@@ -67,7 +67,14 @@ X<-X[,-1]
 #gets signs of regression coefficients
 se<-as.matrix(sign(he),nrow=1)
 # find signigicant effects using LGB
-sigef<-LGB(he,rpt=FALSE,plt=FALSE)
+###### check he
+#cat("heP23 = ",he,"\n")
+###########
+LGB(he)
+sigef<-LGBc(he,rpt=FALSE,plt=FALSE)
+##########
+#cat("sigefP23=",sigef,"\n")
+##############
 # make signs of significant effects zero
  for (i in 1:length(he)) {
      if (sigef[i]=="yes")   {se[i]=0 }
@@ -150,9 +157,9 @@ cat("    Corrrected Data Report  ","\n")
 cat("Response  Corrected Response   Detect Outlier","\n")
 cat(paste(format(DesY$y, width=8), format(DesYc$ycorr, width=13),"           ", format(detect, width=10),"\n"),sep="")
 
-# use LGB to test significance of effects calculated from corrected data
+# use LGBc to test significance of effects calculated from corrected data
 
-tce<-LGB(che)
+tce<-LGBc(che)
   } else {
 cat("Final Outlier Report","\n")
 cat("No significant outlier detected in second pass","\n" )
