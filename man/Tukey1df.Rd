@@ -61,7 +61,7 @@ function (data)
             ybardd)^2/(ssA * ssB))
         ssR <- ssE - ssAB
         F <- ssAB/(ssR/((a - 1) * (b - 1) - 1))
-        Pval <- 1 - pf(1, ((a - 1) * (b - 1) - 1), F)
+        Pval <- 1 - pf(F, 1, ((a - 1) * (b - 1) - 1))
         cat("Source           df     SS        MS        F     Pr>F", 
             "\n")
         cat("A            ", paste(format(a - 1, width = 6), 

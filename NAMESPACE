@@ -1,8 +1,14 @@
-# Default NAMESPACE created by R
-# Remove the previous line if you edit this file
-
-# Export all names
-#exportPattern(".")
+import("lattice")
+importFrom("FrF2","DanielPlot")
+importFrom("FrF2", "IAPlot")
+importFrom("FrF2", "MEPlot")
+importFrom("FrF2", "pb")
+importFrom("FrF2", "FrF2")
+importFrom("BsMD", "BsProb")
+importFrom("BsMD", "LenthPlot")
+importFrom("graphics", "abline", "lines", "plot", "text")
+importFrom("grDevices", "colorRampPalette")
+importFrom("stats", "coefficients", "cor", "lm", "median", "model.matrix", "pf", "qf", "qnorm", "qqnorm", "qt", "reformulate", "runif")
 export(Fcrit,
        Fpower,
        Fpower1,
@@ -33,11 +39,3 @@ export(Fcrit,
 	     bstep,
        colormap
 	   )
-import(lattice)
-importFrom(FrF2,DanielPlot)
-importFrom(FrF2, IAPlot)
-importFrom(FrF2, MEPlot)
-importFrom(FrF2, pb)
-importFrom(FrF2, FrF2)
-importFrom(BsMD, BsProb)
-importFrom(BsMD, LenthPlot)

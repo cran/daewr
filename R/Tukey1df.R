@@ -28,7 +28,7 @@ leftsum<-sum(sumprod*yba)
 ssAB<-(a*b*(leftsum-(ssA+ssB+a*b*ybardd^2)*ybardd)^2/(ssA*ssB))
 ssR<-ssE-ssAB
 F<-ssAB/(ssR/((a-1)*(b-1)-1))
-Pval<-1-pf(1,((a-1)*(b-1)-1),F)
+Pval<-1-pf(F,1,((a-1)*(b-1)-1))
 cat("Source           df     SS        MS        F     Pr>F","\n")
 cat("A            ",paste(format(a-1, width=6)," ", format(round(ssA,4),justify="right"),"  ",format(round(ssA/(a-1),4), justify="right"),"\n"),sep="")
 cat("B            ",paste(format(b-1, width=6)," ", format(round(ssB,4),justify="right"),"  ",format(round(ssB/(b-1),4), justify="right"),"\n"),sep="")
