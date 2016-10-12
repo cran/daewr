@@ -1,8 +1,8 @@
 Package: daewr
 Type: Package
 Title: Design and Analysis of Experiments with R
-Version: 1.1-6
-Date: 2015-7-16
+Version: 1.1-7
+Date: 2016-10-11
 Author: John Lawson
 Maintainer: John Lawson <lawson@byu.edu>
 Description: Contains Data frames and functions used in the book "Design and Analysis of Experiments with R".
@@ -10,7 +10,10 @@ License: GPL-2
 Imports: lattice, FrF2, BsMD, graphics, grDevices, stats
 LazyLoad: yes
 LazyData: yes
-Packaged: 2015-07-22 14:49:08 UTC; Lawson
-NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2015-07-22 22:43:18
+Repository/R-Forge/Project: daewr
+Repository/R-Forge/Revision: 129
+Repository/R-Forge/DateTimeStamp: 2016-10-11 19:10:23
+Date/Publication: 2016-10-12 23:53:07
+NeedsCompilation: no
+Packaged: 2016-10-11 19:25:23 UTC; rforge
