@@ -1,4 +1,6 @@
 import("lattice")
+import("stringi")
+#importFrom("stringi","stri_replace_all_fixed")
 importFrom("FrF2","DanielPlot")
 importFrom("FrF2", "IAPlot")
 importFrom("FrF2", "MEPlot")
@@ -6,6 +8,8 @@ importFrom("FrF2", "pb")
 importFrom("FrF2", "FrF2")
 importFrom("BsMD", "BsProb")
 importFrom("BsMD", "LenthPlot")
+importFrom("stats", "formula")
+importFrom("utils", "capture.output")
 importFrom("graphics", "abline", "lines", "plot", "text")
 importFrom("grDevices", "colorRampPalette")
 importFrom("stats", "coefficients", "cor", "lm", "median", "model.matrix", "pf", "qf", "qnorm", "qqnorm", "qt", "reformulate", "runif")
@@ -13,29 +17,30 @@ export(Fcrit,
        Fpower,
        Fpower1,
        Fpower2,
-	     Gaptest,
-	     gapstat,
-	     LGB,
+       Gaptest,
+       gapstat,
+       LGB,
        LGBc,
-	     Tukey1df,
-	     vci,
-	     BIBsize,
-	     mod,
-	     fullnormal,
+       Tukey1df,
+       vci,
+       BIBsize,
+       mod,
+       fullnormal,
        halfnorm,
-	     Altscreen,
-	     ModelRobust,
-	     DefScreen,
-	     OptPB,
-	     EEw1s1,
-	     EEw1s2,
-	     EEw1s3,
-	     EEw2s1,
-	     EEw2s2,
-	     EEw2s3,
-	     EEw3,
-	     ihstep,
-	     fhstep,
-	     bstep,
+       Altscreen,
+       ModelRobust,
+       DefScreen,
+       OptPB,
+       EEw1s1,
+       EEw1s2,
+       EEw1s3,
+       EEw2s1,
+       EEw2s2,
+       EEw2s3,
+       EEw3,
+       ihstep,
+       fhstep,
+       bstep,
+       step.forward,
        colormap
 	   )
