@@ -2,12 +2,13 @@ import("lattice")
 import("stringi")
 #importFrom("stringi","stri_replace_all_fixed")
 importFrom("FrF2","DanielPlot")
+importFrom("grDevices", "grey")
+importFrom("graphics", "axis", "par", "segments", "strheight")
+importFrom("stats", "coef")
 importFrom("FrF2", "IAPlot")
 importFrom("FrF2", "MEPlot")
 importFrom("FrF2", "pb")
 importFrom("FrF2", "FrF2")
-importFrom("BsMD", "BsProb")
-importFrom("BsMD", "LenthPlot")
 importFrom("stats", "formula")
 importFrom("utils", "capture.output")
 importFrom("graphics", "abline", "lines", "plot", "text")
@@ -19,6 +20,7 @@ export(Fcrit,
        Fpower2,
        Gaptest,
        gapstat,
+       LenthPlot,
        LGB,
        LGBc,
        Tukey1df,
@@ -38,9 +40,10 @@ export(Fcrit,
        EEw2s2,
        EEw2s3,
        EEw3,
-       ihstep,
        fhstep,
-       bstep,
-       step.forward,
+       firstm,
+       fnextrm,
+       HierAFS,
+       ihstep,
        colormap
 	   )

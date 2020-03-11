@@ -1,4 +1,6 @@
 Tukey1df<-function(data) {
+# First sorts the data by the second column first
+data<-data[order(data[ , 2],data[ , 3]),]
 y<-data[,1]
 Afactor<-data[,2]
 Bfactor<-data[,3]

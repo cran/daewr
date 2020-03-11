@@ -43,7 +43,6 @@ Wpeffects<-effects[c(1:4, 6:11, 16:19, 26)]
 Speffects<-effects[c(5,12:15,20:25,27:31)]
 
 #make separate normal plots
-library(BsMD)
 fullnormal(Wpeffects,names(Wpeffects),alpha=.10)
 fullnormal(Speffects,names(Speffects),alpha=.05)
 

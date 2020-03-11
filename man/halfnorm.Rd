@@ -42,7 +42,6 @@ Wpeffects<-effects[c(1:4, 6:11, 16:19, 26)]
 Speffects<-effects[c(5,12:15,20:25,27:31)]
 
 #make separate half normal plots
-library(BsMD)
 halfnorm(Wpeffects,names(Wpeffects),alpha=.10)
 halfnorm(Speffects,names(Speffects),alpha=.05)
         }

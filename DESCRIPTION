@@ -1,23 +1,23 @@
 Package: daewr
 Type: Package
 Title: Design and Analysis of Experiments with R
-Version: 1.1-8
-Date: 2020-1-8
+Version: 1.2-2
+Date: 2020-3-10
 Authors@R: c(
-     person("John", "Lawson", email = "lawson@byu.edu", role=c("aut","cre")),
+     person("John", "Lawson", email = "lawsonjsl7net@gmail.com", role=c("aut","cre")),
      person("Gerhard", "Krennrich", email="krennri@uni-heidelberg.de", role="aut"))           
-Maintainer: John Lawson <lawson@byu.edu>
+Maintainer: John Lawson <lawsonjsl7net@gmail.com>
 Description: Contains Data frames and functions used in the book "Design and Analysis of Experiments with R".
 License: GPL-2
-Imports: lattice, FrF2, BsMD, graphics, grDevices, stats, stringi
+Imports: lattice, FrF2, graphics, grDevices, stats, stringi
 LazyLoad: yes
 LazyData: yes
 Author: John Lawson [aut, cre],
   Gerhard Krennrich [aut]
 Repository: CRAN
 Repository/R-Forge/Project: daewr
-Repository/R-Forge/Revision: 183
-Repository/R-Forge/DateTimeStamp: 2020-01-09 02:19:20
-Date/Publication: 2020-01-16 15:20:21 UTC
+Repository/R-Forge/Revision: 193
+Repository/R-Forge/DateTimeStamp: 2020-03-10 22:55:33
+Date/Publication: 2020-03-11 13:50:02 UTC
 NeedsCompilation: no
-Packaged: 2020-01-09 03:00:52 UTC; rforge
+Packaged: 2020-03-10 23:10:09 UTC; rforge
