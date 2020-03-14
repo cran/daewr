@@ -1,7 +1,7 @@
 Package: daewr
 Type: Package
 Title: Design and Analysis of Experiments with R
-Version: 1.2-2
+Version: 1.2-3
 Date: 2020-3-10
 Authors@R: c(
      person("John", "Lawson", email = "lawsonjsl7net@gmail.com", role=c("aut","cre")),
@@ -16,8 +16,8 @@ Author: John Lawson [aut, cre],
   Gerhard Krennrich [aut]
 Repository: CRAN
 Repository/R-Forge/Project: daewr
-Repository/R-Forge/Revision: 193
-Repository/R-Forge/DateTimeStamp: 2020-03-10 22:55:33
-Date/Publication: 2020-03-11 13:50:02 UTC
+Repository/R-Forge/Revision: 194
+Repository/R-Forge/DateTimeStamp: 2020-03-12 17:13:05
+Date/Publication: 2020-03-14 17:10:11 UTC
 NeedsCompilation: no
-Packaged: 2020-03-10 23:10:09 UTC; rforge
+Packaged: 2020-03-12 17:30:08 UTC; rforge

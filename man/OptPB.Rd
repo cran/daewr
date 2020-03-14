@@ -2,7 +2,7 @@
 \alias{OptPB}
 \title{Optimum Plackett-Burman Designs}
 \description{ Selects the columns from a Plackett-Burman Design Produced by FrF2 that will minimize 
-model dependence for main effects and two factor interactions
+model dependence for main effects and two factor interactions and returns the design in a data frame
 }
 \usage{
 OptPB(nruns, nfactors, randomize=FALSE)
