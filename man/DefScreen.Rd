@@ -4,12 +4,14 @@
 \description{ Recalls Jones and Nachtsheim's Definitive screening designs for 3-level factors and 3-level factors with added 2-level categorical factors.
 }
 \usage{
-DefScreen(m, c=0, randomize=FALSE)
+DefScreen(m, c=0, center=0, randomize=FALSE)
 }
 \arguments{
   \item{m}{ input- an integer, the m=number of 3-level factors
 }
   \item{c}{ input- an integer, the m=number of 2-level categorical factors, default is zero if not supplied
+}
+  \item{center}{ input- an integer, the number of extra center points. This must be zero when c>0
 }
   \item{randomize}{input - logical
 }

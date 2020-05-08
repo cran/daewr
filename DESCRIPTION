@@ -1,8 +1,8 @@
 Package: daewr
 Type: Package
 Title: Design and Analysis of Experiments with R
-Version: 1.2-3
-Date: 2020-3-10
+Version: 1.2-4
+Date: 2020-5-7
 Authors@R: c(
      person("John", "Lawson", email = "lawsonjsl7net@gmail.com", role=c("aut","cre")),
      person("Gerhard", "Krennrich", email="krennri@uni-heidelberg.de", role="aut"))           
@@ -12,12 +12,14 @@ License: GPL-2
 Imports: lattice, FrF2, graphics, grDevices, stats, stringi
 LazyLoad: yes
 LazyData: yes
+Suggests: R.rsp
+VignetteBuilder: R.rsp
 Author: John Lawson [aut, cre],
   Gerhard Krennrich [aut]
 Repository: CRAN
 Repository/R-Forge/Project: daewr
-Repository/R-Forge/Revision: 194
-Repository/R-Forge/DateTimeStamp: 2020-03-12 17:13:05
-Date/Publication: 2020-03-14 17:10:11 UTC
+Repository/R-Forge/Revision: 204
+Repository/R-Forge/DateTimeStamp: 2020-05-07 22:44:12
+Date/Publication: 2020-05-08 10:50:02 UTC
 NeedsCompilation: no
-Packaged: 2020-03-12 17:30:08 UTC; rforge
+Packaged: 2020-05-07 23:08:20 UTC; rforge

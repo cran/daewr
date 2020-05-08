@@ -1,11 +1,12 @@
-
-DefScreen <- function(m, c=0, randomize=FALSE) {
+DefScreen <- function(m=0, c=0,center=0,randomize=FALSE) {
 # Definitive Screening Designs for 3-level factors ##
 if (m<4) {stop("Definitive Screening Designs only exist for 4-12 3-level factors") }
 if (m>12) {stop("Definitive Screening Designs only exist for 4-12 3-level factors") }
 if (c<0) {stop("Definitive Screening Designs only exist for 0-4 2-level categorical factors") }
 if (c>4) {stop("Definitive Screening Designs only exist for 0-4 2-level categorical factors") }
-if (c==0)              {
+if (c>0 && center>0) {stop("Cannnot add center points to design with 2-level categorical factors") }
+
+  if (c==0)              {
 # Design for 4 3-level factors 
 if (m==4) {
   f1 <- matrix(c(0,1,-1,-1,-1,0,-1,1,-1,-1,0,-1,-1,1,1,0), ncol=m,byrow=TRUE)
@@ -27,8 +28,8 @@ if (m==5)  {
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E")
   des <- data.frame(des)
-              }
-# Design for 6 3-level factors 
+}
+
 if (m==6)     {
   f1 <- matrix(c(0,1,-1,-1,-1,-1,1,0,-1,1,1,-1,-1,-1,0,1,-1,-1,-1,1,1,0,1,-1,1,-1,1,-1,0,-1,1,1,1,1,-1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
@@ -110,7 +111,7 @@ if (m==11)     {
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
   des <- data.frame(des)
 }
-# Design for 11 3-level factors
+# Design for 12 3-level factors
 if (m==12)     {
   f1 <- matrix(c(0,-1,-1,1,-1,1,-1,1,1,1,-1,1,
                  -1,0,1,1,1,1,1,1,1,-1,-1,-1,
@@ -723,9 +724,22 @@ if (c==4)                     {
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q")
     des <- data.frame(des)
   }
-nr <- nrow(des)
-if(randomize==TRUE) {des <- des[sample(1:nr), ]}
+
 }
+  
+  nr <- nrow(des)
+  ncd<-ncol(des)
+  if(center>0){
+    cpr<-c(rep(0,ncd))
+    for (i in 1:center){
+      des<-rbind(des,cpr)    
+    }
+   if(randomize==TRUE) {des <- des[sample(1:nr+center), ]}
+  }
+  if(center==0){
+    if(randomize==TRUE) {des <- des[sample(1:nr), ]}
+  }
+    
 return(des)
                                           }
 

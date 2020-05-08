@@ -1,8 +1,8 @@
-415cedc172b1fa5510442e445bc37876 *DESCRIPTION
-6fc7d62838d0baf3a7f8233404911d60 *NAMESPACE
+c53a3aececf35bef04d412cd9bc0cae0 *DESCRIPTION
+a455d82d071efa07de970cc5d857170c *NAMESPACE
 d2a7a39e0740e3a3d1c381d44fcdf5e9 *R/Altscreen.R
 bb9799eb7b583f6ea1253362119fae7a *R/BIBsize.R
-b16a38959f41b862106b6678b43365b1 *R/DefScreen.R
+d313a110efe4939a69005c44301428be *R/DefScreen.R
 ef9d354e3c4826fc8b8c9bd3c3bb0013 *R/EEw1s1.R
 e9be48e5753d0d3be6b3698f625aae69 *R/EEw1s2.R
 d266290a395c3229e8ffdc92a2750169 *R/EEw1s3.R
@@ -11,6 +11,7 @@ e632593934b8ac3837c4c769ded20224 *R/EEw2s1.R
 50f7c8c75f7b7ce22c1ec22506ae302c *R/EEw2s3.R
 acf53ea7f1a77e5c9e5928118376844a *R/EEw3.R
 8cc36b1b05d20018364d627f04322d34 *R/Fcrit.R
+1d4e8fc01158dbcab1146d6c90b38d40 *R/FitDefSc.R
 207369e13ced43cc73565493439429d1 *R/Fpower.R
 7cd0aaeb1da307a8ea32a137b47f23fd *R/Fpower1.R
 79a75bffd7fb321f897b2d7e23a884f2 *R/Fpower2.R
@@ -23,17 +24,19 @@ ec6cca3fa3ed4a36c484824ed348e054 *R/LenthPlot.R
 a28679aedf42d5ebbe9909e9ec1cc2b3 *R/OptPB.R
 e3fb72c9a39263a62a9c8153d7d1965c *R/PBDes.R
 960a112b98cde77431c57989a9db5279 *R/Tukey1df.R
-3e969f7b16ae4effc3f5796120f270e7 *R/bstep.R
 facb3ae11ea68ea1e1bd958d2e7a6300 *R/colormap.R
 735f519ae93a53981c17e61c73d65538 *R/fhstep.R
+ad633de8ab615a89425710cae48943d6 *R/fhstepDS.R
 a8b70c1312e9aef4baf5ebb40e088394 *R/firstm.R
 72837684bdb4008732c6a6b3804f2fcd *R/fnextrm.R
+c3374f6f23b23bcd92e75f8d1e4a0bf8 *R/fntrmDS.R
 6aa1582a873cb1d21f20685dea45359a *R/fullnormal.R
 9c3e473a2a907a707d04b11de9a16012 *R/gapstat.R
 9fe792cfdb45efb2b5272fe0d7cf05b5 *R/halfnorm.R
 806f29294174696ae00892ff019f3db6 *R/ihstep.R
 bc3731af2e36ae0ad62e47578771d411 *R/mod.R
 806a7819c33c26b26106926fd5f3d34e *R/vci.R
+5001e2ee85b913180241d217802cd477 *build/vignette.rds
 31b7dd903d7af6c11437a3619ee4a2e8 *data/Apo.rda
 d0c7100e7f70a56f89a775055fadd40b *data/BPmonitor.rda
 26615273f7f8db1802ca548ba13906c3 *data/Bdish.rda
@@ -95,6 +98,8 @@ ebe5698d501eb627da25e63cada0d22c *data/taste.rda
 55ca110ffd73f10107d154a0c8e703d2 *data/virus.rda
 e6a042128ca74fd54658a5f661dcd934 *data/volt.rda
 73b2203e17cdb7c3beecd449b28337d9 *data/web.rda
+2dfd1ceacb1eb59c581f7587b6a00562 *inst/doc/daewr.pdf
+0f16c53ecf941d75a5572bd1c9712abd *inst/doc/daewr.pdf.asis
 12a23b0324abfc991e3b7da4f0b9606d *man/Altscreen.Rd
 11dc8bb843d841f429ced8459a2c17ad *man/Apo.Rd
 39ca29684df076d8a38afb2c73b46eaf *man/BIBsize.Rd
@@ -103,7 +108,7 @@ b4835946648c3c4747b54f333b2c848b *man/Bdish.Rd
 1c49efd6536ac0867f1e6fc40b60cc2e *man/Bff.Rd
 c5bb182a6c063e0753a76f40de25a93a *man/BoxM.Rd
 e9d21ec056e3aa5a1951b2490fe5325e *man/COdata.Rd
-c9562ef21ec623065f000a5a6d678382 *man/DefScreen.Rd
+27a9aeb3837c3e6dde53688b15487ed8 *man/DefScreen.Rd
 67373e6c289529ebdabb2dfb172b07dc *man/EEw1s1.Rd
 e76b32ba7cd041ef4926ba3d7ac097c0 *man/EEw1s2.Rd
 1a3359b1cb315832b4d29a535461af2a *man/EEw1s3.Rd
@@ -112,6 +117,7 @@ a14bba36e7f9d343ca81f788349509ed *man/EEw2s1.Rd
 ffe05c97b000f72e359bdad42c3c356d *man/EEw2s3.Rd
 535ca580420327a51aada1001ef19020 *man/EEw3.Rd
 38b21ec9722e0f3a923456bc87d44410 *man/Fcrit.Rd
+62e9327a2feb728cd2f28ddf099c1c52 *man/FitDefSc.Rd
 5c9c1f45cf2f29714dedd262b6ff9fc5 *man/Fpower.Rd
 c9462ef78fb42fe52acde2d0c51eb02e *man/Fpower1.Rd
 7e9398fe6c433ad8b0957bebb2ac5cf5 *man/Fpower2.Rd
@@ -154,8 +160,10 @@ c5afa4131c987fd0cbded3db1cd94fad *man/dairy.Rd
 2a25f78511688e48ff6bdcab4ccdd43e *man/eptaxs2.Rd
 896ca681e92c7d2b39f994a601d97732 *man/eptaxyb.Rd
 cb2311894c0bd6cccf8512880759b5e2 *man/fhstep.Rd
+b0cd38158d8fcaa09e889b787867c03e *man/fhstepDS.Rd
 9b8e08b796f37d6c216a9c349705288d *man/firstm.Rd
 130b158fafb2d1f63507514299496afb *man/fnextrm.Rd
+512a5cbdaf09cb3b4686204683c8372f *man/fntrmDS.Rd
 628d4dda4363f276c6ba0d68e231383f *man/fullnormal.Rd
 c8ace76ef37c0d1de18ffb536deb7f78 *man/gagerr.Rd
 2089d15eb511d186115b380af2bd2531 *man/gapstat.Rd
@@ -190,3 +198,5 @@ bd516c531552b911493e6c0a4a12687f *man/tile.Rd
 076a288ab5d4c17d6d70e056223309d3 *man/virus.Rd
 75a72537f74efa3f749616f824e0be2f *man/volt.Rd
 4dcd55753d7d7c9de638d665d9af94c5 *man/web.Rd
+566a013acdd1ddd9003c62571dbe39d1 *vignettes/daewr.Rmd
+0f16c53ecf941d75a5572bd1c9712abd *vignettes/daewr.pdf.asis

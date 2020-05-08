@@ -9,7 +9,7 @@ importFrom("FrF2", "IAPlot")
 importFrom("FrF2", "MEPlot")
 importFrom("FrF2", "pb")
 importFrom("FrF2", "FrF2")
-importFrom("stats", "formula")
+importFrom("stats", "formula","var","anova")
 importFrom("utils", "capture.output")
 importFrom("graphics", "abline", "lines", "plot", "text")
 importFrom("grDevices", "colorRampPalette")
@@ -42,9 +42,12 @@ export(Fcrit,
        EEw2s3,
        EEw3,
        fhstep,
+       fhstepDS,
        firstm,
        fnextrm,
+       fntrmDS,
        HierAFS,
        ihstep,
-       colormap
+       colormap,
+       FitDefSc
 	   )
