@@ -1,4 +1,4 @@
-c53a3aececf35bef04d412cd9bc0cae0 *DESCRIPTION
+dab58418d57bae8008a1908951b7d93f *DESCRIPTION
 a455d82d071efa07de970cc5d857170c *NAMESPACE
 d2a7a39e0740e3a3d1c381d44fcdf5e9 *R/Altscreen.R
 bb9799eb7b583f6ea1253362119fae7a *R/BIBsize.R
@@ -153,7 +153,7 @@ b5fd3bf6780c7dfdce4e5dcb28da9c79 *man/colormap.Rd
 42b3a43b22f498c83ed4a83410268492 *man/cont.Rd
 ad1a40a6b3bca34249686ee0a150db73 *man/cpipe.Rd
 7cfbc8e763ce2b6ac010675dddcdb08a *man/culture.Rd
-d770373d0b6670d95db742380610a12b *man/daewr-package.Rd
+67437bd9e06daa8802bec79ad5d83c55 *man/daewr-package.Rd
 c5afa4131c987fd0cbded3db1cd94fad *man/dairy.Rd
 27d4fb9ed8941fea95106349199eeedb *man/drug.Rd
 83d5b592fe26f190da03975265c0fa2b *man/eptaxr.Rd

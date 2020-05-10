@@ -10,7 +10,7 @@ This package contains the data sets and functions from the book Design and Analy
 \tabular{ll}{
 Package: \tab daewr\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 1.2-5\cr
 Date: \tab 2012-05-10\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
@@ -19,7 +19,7 @@ LazyLoad: \tab yes\cr
 \author{
 John Lawson
 
-Maintainer: John Lawson <lawson@byu.edu>
+Maintainer: John Lawson <lawsonjsl7net@gmail.com>
 
 }
 \references{
