@@ -8,7 +8,6 @@ cat("   Jones and Goos, JQT(2012) pp. 363-374","\n")
 cat(" ", "\n")
 cat(format("Design Name",width=11),format("whole plots",width=11),format("sub-plots/whole plot",width=21),"\n")
 cat("----------------------------------------","\n")
-cat(format("EE16R8WP", width=11),format("   8",width=11),format("           2",width=21),"\n")
 cat(format("EE18R9WP", width=11),format("   9",width=11),format("           2",width=21),"\n")
 cat(format("EE20R10WP", width=11),format("  10",width=11),format("           2",width=21),"\n")
 cat(format("EE21R7WP", width=11),format("   7",width=11),format("           3",width=21),"\n")
@@ -546,8 +545,3 @@ cat("==> to retrieve a design type EEw2s2('EE21R7WP') etc.","\n")
 
           } else cat(" Design name misspelled-Enter EEw2s2( ) to display list of names","\n")
                  }
-
-
-EEw2s2( )
-EE<-EEw2s2('EE33R11WP')
-EE<-EEw2s2('EE33R11WP', randomize = TRUE)

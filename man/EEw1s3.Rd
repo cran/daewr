@@ -22,7 +22,7 @@ John Lawson
 }
 \examples{
 EEw1s3()
-EEw1s3('EE16R4WP')
-EEw1s3('EE16R4WP', randomize=TRUE)
+EEw1s3('EE18R6WP')
+EEw1s3('EE18R6WP', randomize=TRUE)
      }
 \keyword{ datagen }
