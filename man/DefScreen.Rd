@@ -26,11 +26,5 @@ Jones, B. and Nachtsheim, C. J.  (2013) "Definitive Screening Designs with Added
 \author{
 John Lawson
 }
-
-\examples{
-DefScreen(m=8,c=2)
-DefScreen(12)
-DefScreen(m=4,c=4, randomize=TRUE)
-     }
 \keyword{ datagen }
 

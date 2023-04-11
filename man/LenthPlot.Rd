@@ -7,8 +7,8 @@ estimation of contrast standard errors.
 }
 \usage{
 LenthPlot(obj, alpha = 0.05, plt = TRUE, limits = TRUE,
-    xlab = "factors", ylab = "effects", faclab = NULL, cex.fac = par("cex.lab"),
-    cex.axis=par("cex.axis"), adj = 1, ...)
+    xlab = "factors", ylab = "effects", faclab = NULL, cex.fac = graphics::par("cex.lab"),
+    cex.axis=graphics::par("cex.axis"), adj = 1, ...)
 }
 \arguments{
   \item{obj}{object of class \code{lm} or vector with the factor effects.}
@@ -53,13 +53,5 @@ LenthPlot(obj, alpha = 0.05, plt = TRUE, limits = TRUE,
 }
 \author{Ernesto Barrios. Extension provided by Kjetil Kjernsmo (2013).}
 %\seealso{\code{\link{DanielPlot}}, \code{\link{BsProb}} and \code{\link{plot.BsProb}}}
-\examples{
-# Example Separate Normal plots of whole and split plot effects from an unreplicated split-plot 
-data(plasma)
-sol<-lm(y~A*B*C*D*E,data=plasma)
-summary(sol)
-# get whole plot effects and split plot effects
-effects<-coef(sol)
-LenthPlot(effects,alpha=.05)
-}
+
 \keyword{design}

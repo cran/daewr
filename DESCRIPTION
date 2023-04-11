@@ -1,26 +1,25 @@
 Package: daewr
 Type: Package
 Title: Design and Analysis of Experiments with R
-Version: 1.2-7
-Date: 2021-2-18
+Version: 1.2-9
+Date: 2023-3-23
 Authors@R: c(
      person("John", "Lawson", email = "lawsonjsl7net@gmail.com", role=c("aut","cre")),
-     person("Gerhard", "Krennrich", email="krennri@uni-heidelberg.de", role="aut"))           
+     person("Gerhard", "Krennrich", email="krennri@uni-heidelberg.de", role="aut"),
+     person("Ruben","Amoros", email="ruben.amoros@uv.es", role="ctr"))           
 Maintainer: John Lawson <lawsonjsl7net@gmail.com>
-Description: Contains Data frames and functions used in the book "Design and Analysis of Experiments with R".
+Description: Contains Data frames and functions used in the book "Design and Analysis of Experiments with R", Lawson(2015) ISBN-13:978-1-4398-6813-3.
 License: GPL-2
-Imports: lattice, FrF2, graphics, grDevices, stats, stringi
+Depends: R (>= 3.5.0)
+Encoding: UTF-8
 LazyLoad: yes
 LazyData: yes
-Suggests: R.rsp
-VignetteBuilder: R.rsp
-Author: John Lawson [aut, cre],
-  Gerhard Krennrich [aut]
-Repository: CRAN
-Repository/R-Forge/Project: daewr
-Repository/R-Forge/Revision: 215
-Repository/R-Forge/DateTimeStamp: 2021-03-12 19:12:28
-Date/Publication: 2021-03-15 21:50:02 UTC
+Imports: stringi,stats,graphics,grDevices,lattice
+RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2021-03-12 19:27:44 UTC; rforge
-Depends: R (>= 3.5.0)
+Packaged: 2023-04-06 16:01:19 UTC; lawso
+Author: John Lawson [aut, cre],
+  Gerhard Krennrich [aut],
+  Ruben Amoros [ctr]
+Repository: CRAN
+Date/Publication: 2023-04-11 01:20:09 UTC

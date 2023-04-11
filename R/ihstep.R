@@ -38,14 +38,14 @@ ihstep <- function(y,des,m,c) {
   dat<-data.frame(y=y,des)
   #gets the model matrix
   lm1<-lm(y~(.)^2,data=dat)
-  mm<-model.matrix(lm1)
+  mm<-stats::model.matrix(lm1)
   fact<-colnames(mm)
   fact<-fact[-1]
   fact<-paste(fact,collapse='+')
   mod<-paste(c(fact,quad),collapse='+')
   #  lmtest<-lm(y~A+B+A:B+I(A^2)+I(B^2),data=dat)
-  lm2<-lm(reformulate(termlabels=mod, response='y'),data=dat) # This works
-  mm<-model.matrix(lm2)
+  lm2<-lm(stats::reformulate(termlabels=mod, response='y'),data=dat) # This works
+  mm<-stats::model.matrix(lm2)
   #deletes the constant column from the model matrix
   mm<-mm[,2:ncol(mm)]
   # finds the initial hierarchical model with the lowest regression p-value

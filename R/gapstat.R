@@ -18,8 +18,8 @@ betan<-sort(betan)
 #gets Beta_L
 betal<-betan[nn]
 # gets Z_L and Z_S
-zl<-qnorm((nn-.375)/(p+.25))
-zs<-qnorm((nn+1-.375)/(p+.25))
+zl<-stats::qnorm((nn-.375)/(p+.25))
+zs<-stats::qnorm((nn+1-.375)/(p+.25))
 # calculates gap statistic
 gap<-((betas-betal)/psehe)/(zs-zl)
 return(gap)

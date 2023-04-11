@@ -18,16 +18,16 @@ HierAFS <- function(y,x,m,c,step)
   any.col <- colnames(x)
     xx <- x
     xx$y <- y
-    suppressWarnings(invisible(capture.output(res<- ihstep(y,x,m,c))) )
+    suppressWarnings(invisible(utils::capture.output(res<- ihstep(y,x,m,c))) )
     f <- paste("y~", paste(res,collapse="+"),sep="")
-    collect <- data.frame(formula=f, R2= round(summary(lm(formula(f),data=xx) )$r.square,3) )
+    collect <- data.frame(formula=f, R2= round(summary(stats::lm(stats::formula(f),data=xx) )$r.square,3) )
     
     for (i in (2:step)) {
-      suppressWarnings( invisible(capture.output(res <- fhstep(y,x,m,c,res))) )
+      suppressWarnings( invisible(utils::capture.output(res <- fhstep(y,x,m,c,res))) )
       f <- paste("y~", paste(res,collapse="+"),sep="")
       #f2 <- paste("y ~",paste(stringi::stri_replace_all_fixed(res,letter.col ,
       #                                                        any.col, vectorize_all = FALSE),collapse="+"))
-      collect <- rbind(collect,data.frame(formula=f, R2= round(summary(lm(formula(f),data=xx) )$r.square,3)))
+      collect <- rbind(collect,data.frame(formula=f, R2= round(summary(stats::lm(stats::formula(f),data=xx) )$r.square,3)))
     }
   }  
   if(nm1==FALSE) 
@@ -37,20 +37,20 @@ HierAFS <- function(y,x,m,c,step)
   colnames(x) <- letter.col
   xx <- x
   xx$y <- y
-  suppressWarnings(invisible(capture.output(res<- ihstep(y,x,m,c))) )
+  suppressWarnings(invisible(utils::capture.output(res<- ihstep(y,x,m,c))) )
   f <- paste("y~", paste(res,collapse="+"),sep="")
   
   f2 <- paste("y ~",paste(stringi::stri_replace_all_fixed(res,letter.col ,
                                                           any.col, vectorize_all = FALSE),collapse="+"))
-  collect <- data.frame(formula=f2, R2= round(summary(lm(formula(f),data=xx) )$r.square,3) )
+  collect <- data.frame(formula=f2, R2= round(summary(stats::lm(stats::formula(f),data=xx) )$r.square,3) )
   
   
   for (i in (2:step)) {
-    suppressWarnings( invisible(capture.output(res <- fhstep(y,x,m,c,res))) )
+    suppressWarnings( invisible(utils::capture.output(res <- fhstep(y,x,m,c,res))) )
     f <- paste("y~", paste(res,collapse="+"),sep="")
     f2 <- paste("y ~",paste(stringi::stri_replace_all_fixed(res,letter.col ,
                                                             any.col, vectorize_all = FALSE),collapse="+"))
-    collect <- rbind(collect,data.frame(formula=f2, R2= round(summary(lm(formula(f),data=xx) )$r.square,3)))
+    collect <- rbind(collect,data.frame(formula=f2, R2= round(summary(stats::lm(stats::formula(f),data=xx) )$r.square,3)))
   }
   }
   return(collect)

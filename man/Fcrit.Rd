@@ -21,12 +21,6 @@ Fcrit(alpha, nu1, nu2)
 \author{
 John Lawson
 }
-
-\examples{
-Fcrit(.05,2,15)
-## The function is currently defined as
-function(alpha,nu1,nu2) qf(1-alpha,nu1,nu2)
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{datagen}

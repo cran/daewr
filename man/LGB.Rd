@@ -39,18 +39,6 @@ John Lawson
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
-
-\examples{
-data(chem)
-modf<-lm(y~A*B*C*D,data=chem)
-LGB(coef(modf)[-1],rpt=FALSE)
-
-
-## The function is currently defined as
-LGB <- function(Beta, alpha=.05,rpt=TRUE, plt=TRUE, pltl=TRUE) {
-sigLGB<-LGBc(Beta,alpha,rpt,plt,pltl)
-}
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{htest}

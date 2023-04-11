@@ -8,8 +8,8 @@ le<-length(effects)
      logc<-(abs(effects[i])<=crit)
      if (logc) {names[i]<-" "}
                   }
-qqnorm(effects, ylab="Estimated Effects", xlab="Normal Scores")
-x<-qqnorm(effects,plot=FALSE)
+stats::qqnorm(effects, ylab="Estimated Effects", xlab="Normal Scores")
+x<-stats::qqnorm(effects,plot=FALSE)
 zscr<-(x$x)
 # Splits effects into positive and negative for labeling
 effp<-effects[zscr>0]
@@ -18,15 +18,15 @@ namep<-names[zscr>0]
 effn<-effects[zscr<0]
 zn<-zscr[zscr<0]
 namen<-names[zscr<0]
-text(zp,effp,namep,pos=1) 
-text(zn,effn,namen,pos=3)  
+graphics::text(zp,effp,namep,pos=1) 
+graphics::text(zn,effn,namen,pos=3)  
 # calculate pse statistic
 ahe<-abs(effects)
-s0<-1.5*median(ahe)
+s0<-1.5*stats::median(ahe)
 selhe<-ahe<(2.5*s0)
-pse=1.5*median(ahe[selhe])
+pse=1.5*stats::median(ahe[selhe])
 if (refline) {
 # add reference line to plot
-abline(0,pse)
+graphics::abline(0,pse)
   }
                 }

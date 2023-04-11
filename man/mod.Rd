@@ -20,11 +20,4 @@ mod(a,b)
 John Lawson
 }
 
-\examples{
-mod(5,3)
-## The function is currently defined as
-mod<-function(a,b)
-{a-b*floor(a/b)}
-
-     }
 \keyword{ datagen }

@@ -14,7 +14,7 @@ css<-(Delta^2)/2
 nc<- (nreps*css)/(sigma^2)
 df1<-nlev-1
 df2<-(nreps-1)*nlev
-power <- 1-pf(Fcrit(alpha,df1,df2),df1,df2,nc)
+power <- 1-stats::pf(Fcrit(alpha,df1,df2),df1,df2,nc)
 result <- cbind(alpha,nlev,nreps, Delta, sigma, power)
 return(result)
 }

@@ -13,7 +13,7 @@ firstm(y,des)
   \item{y}{
 input - this is a data frame containing a single numeric column of response data.
 }
-  \item{des}{
+\item{des}{
 input - this is a data frame containing the numeric columns of the candidate independent variables. The column names of des are of length 1. The m three-level factors always preceed the c two-level factors in the design.
 }
 }

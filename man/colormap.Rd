@@ -30,26 +30,6 @@ John Lawson
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \examples{
-# color map of 2^(4-1) design
-library(FrF2)
-design <- FrF2(8, 4, randomize = FALSE)
-colormap(design, mod=3)
-
-# Makes color map for saturated 2^(7-4) design in Figure 6.14 p. 197
-library(FrF2)
-design <-FrF2( 8, 7)
-colormap(design, mod=2)
-
-# Makes colormap of an Alternate Screening Design 
-library(daewr)
-ascr<-Altscreen(7)
-colormap(ascr, mod=2)
-
-# Makes colormap of a Model Robust Design 
-library(daewr)
-MR16 <- ModelRobust('MR16m7g5', randomize = FALSE)
-colormap(MR16, mod=2)
-          
 ## The function is currently defined as
 function(design,mod) {
 ##################### Inputs ###########################################

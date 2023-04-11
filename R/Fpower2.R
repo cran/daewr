@@ -21,7 +21,7 @@ nca<- b*(nreps*cssa)/(sigma^2)
 dfa<- a-1
 dfb<- b-1
 df2<-(nreps-1)*b*a
-powera <- 1-pf(Fcrit(alpha,dfa,df2),dfa,df2,nca)
-powerb <- 1-pf(Fcrit(alpha,dfb,df2),dfa,df2,nca)
+powera <- 1-stats::pf(Fcrit(alpha,dfa,df2),dfa,df2,nca)
+powerb <- 1-stats::pf(Fcrit(alpha,dfb,df2),dfb,df2,ncb)
 result <-cbind(alpha,a,b,nreps,Delta,sigma,powera,powerb)
 }

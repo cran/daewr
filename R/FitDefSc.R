@@ -16,12 +16,12 @@ FitDefSc<-function(y,design,alpha=.05)
   pedf<-0
   if(length(cntrpr)>1) {
     ycpr<-y[cntrpr]
-    pess<-(length(ycpr)-1)*var(ycpr)
+    pess<-(length(ycpr)-1)*stats::var(ycpr)
     pedf<-length(ycpr)-1} 
   # get main effects
-  modme<-lm(y~(.),data=design)
+  modme<-stats::lm(y~(.),data=design)
   Smry<-summary(modme)
-  Aov<-anova(modme)
+  Aov<-stats::anova(modme)
   # main effect p-values
   Smry$coefficients[,4]
   # main effect labels
@@ -58,9 +58,9 @@ FitDefSc<-function(y,design,alpha=.05)
   so<-Smry
   ao<-Aov
   #Fit the new model and replace Smry
-  modn<-lm(y~(.),data= ndesign)
+  modn<-stats::lm(y~(.),data= ndesign)
   Smry<-summary(modn)
-  Aov<-anova(modn)
+  Aov<-stats::anova(modn)
   p<-Smry$coefficients[,4]
 # get the pvalue of the term just entered
   p<-p[-1]
@@ -94,7 +94,7 @@ if(pedf>1){
   sslof<-Rssq-pess
   dflof<-Rdf-pedf  
   Flof<-(sslof/dflof)/(pess/pedf)
-  plof<-1-pf(Flof,dflof,dflof)
+  plof<-1-stats::pf(Flof,dflof,dflof)
   # combine in data frame
   ssv<-c(sslof,pess)
   dfv<-c(dflof,pedf)

@@ -18,7 +18,7 @@ critg32<-c(1.7297,5.8758)
 
 ###### Step 1  #######
 #fit model to saturated design
-modf<-lm(y~(.)^4,x=TRUE,data=DesY)
+modf<-stats::lm(y~(.)^4,x=TRUE,data=DesY)
 
 
 #extract the regression coefficients
@@ -43,9 +43,9 @@ names(he)<-ccn1
 ###### Steps 2 and 3  #######
 #calculate the pse statistic
 ahe<-abs(he)
-s0<-1.5*median(ahe)
+s0<-1.5*stats::median(ahe)
 selhe<-ahe<(2.5*s0)
-pse=1.5*median(ahe[selhe])
+pse=1.5*stats::median(ahe[selhe])
 #library(BsMD)
 #pse<-LenthPlot(modf,plt=FALSE)
 #pse<-pse[2]
@@ -117,7 +117,7 @@ cat("Standardized-Gap = ",gap, "Significant at 50th percentile","\n")
 # augment DesY with corrected data
 DesYc<-cbind(DesY[,1:(dim(DesY)[2]-1)],ycorr)
 # fit saturated model to corrected data
-modf<-lm(ycorr~(.)^4,x=TRUE,data=DesYc)
+modf<-stats::lm(ycorr~(.)^4,x=TRUE,data=DesYc)
 
 #extract the regression coefficients
 che<-modf$coef
@@ -137,9 +137,9 @@ names(che)<-ccn
 ###### Steps 2 and 3  #######
 #calculate the pse statistic
 ache<-abs(che)
-s0<-1.5*median(ache)
+s0<-1.5*stats::median(ache)
 selche<-ache<(2.5*s0)
-psec=1.5*median(ache[selche])
+psec=1.5*stats::median(ache[selche])
 
 #psec<-LenthPlot(modf,plt=FALSE)
 #psec<-psec[2]

@@ -30,14 +30,7 @@ returned vector of terms entered in the model at this step.
 John Lawson
 }
 
-\examples{
 
-library(daewr)
-des <- DefScreen( m = 8 )
-pd<-c(5.35,4.4,12.91,3.79,4.15,14.05,11.4,4.29,3.56,11.4,10.09,5.9,9.54,4.53,3.919,8.1,5.35)
-trm<-ihstep(pd,des,m=8,c=0)
-
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{htest}

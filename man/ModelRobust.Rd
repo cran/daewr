@@ -21,9 +21,4 @@ Li, W. and Nachtsheim, C. J. (2000) "Model Robust factorial Designs", Technometr
 John Lawson
 }
 
-\examples{
-ModelRobust()
-ModelRobust('MR8m4g3')
-ModelRobust('MR8m4g3', randomize=TRUE)
-     }
 \keyword{ datagen }

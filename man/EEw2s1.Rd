@@ -20,9 +20,4 @@ Jones, B. and Goos, P.(2012) "An Algorithm for Finding D-Efficient Equivalent-Es
 \author{
 John Lawson
 }
-\examples{
-EEw2s1()
-EEw2s1('EE21R7WP')
-EEw1s1('EE21R7WP', randomize=TRUE)
-     }
 \keyword{ datagen }

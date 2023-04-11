@@ -21,9 +21,4 @@ Jones, B. and Montgomery, D. C.  (2010) "Alternatives to resolution IV screening
 \author{
 John Lawson
 }
-
-\examples{
-Altscreen(6)
-Altscreen(6, randomize=TRUE)
-     }
 \keyword{ datagen }

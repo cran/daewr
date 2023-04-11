@@ -34,19 +34,7 @@ returned data frame the first column is a factor variable containing the formula
 Gerhard Krennrich, and modified by John Lawson
 }
 
-\examples{
-#Definitive Screening Design
-library(daewr)
-set.seed(1234)
-x <- DefScreen(m=5,c=0)
-x$y <- 3*x$A + 2*x$B + 3*x$A*x$B + 2*x$A^2 + 2*x$C+rnorm(nrow(x),0,.5) 
-HierAFS(x$y,x[,-6],m=5,c=0,step=3)
-# Alternate Screening Example
-library(daewr)
-Design<-Altscreen(nfac=6,randomize=FALSE)
-Thickness<-c(4494,4592,4357,4489,4513,4483,4288,4448,4691,4671,4219,4271,4530,4632,4337,4391)
-HierAFS(Thickness,Design,m=0,c=6,step=3)
-}
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{htest}

@@ -26,20 +26,20 @@ fhstepDS<-function(y,des,m,c,prvm) {
   dat<-data.frame(y=y,des)
   #gets the model matrix of the full model
   #gets the model matrix
-  lm1<-lm(y~(.)^2,data=dat)
-  mm<-model.matrix(lm1)
+  lm1<-stats::lm(y~(.)^2,data=dat)
+  mm<-stats::model.matrix(lm1)
   fact<-colnames(mm)
   fact<-fact[-1]
   fact<-paste(fact,collapse='+')
   mod<-paste(c(fact,quad),collapse='+')
-  lm2<-lm(reformulate(termlabels=mod, response='y'),data=dat) # This works
-  mm<-model.matrix(lm2)
+  lm2<-stats::lm(stats::reformulate(termlabels=mod, response='y'),data=dat) # This works
+  mm<-stats::model.matrix(lm2)
   #deletes the constant column from the model matrix
   mm<-mm[,2:ncol(mm)]
   #creates data frame with terms from previous model
   d1<-data.frame(y=y,mm[,prvm])
   #fits the previous model
-  m1<-lm(y~(.),data=d1)
+  m1<-stats::lm(y~(.),data=d1)
   #finds the term whose hierarchical model added to the previous model
   # has the minimum pvalue
   term<-fntrmDS(y,mm,prvm)

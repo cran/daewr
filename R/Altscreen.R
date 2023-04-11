@@ -29,6 +29,3 @@ Altscreen<-function(nfac, randomize=FALSE) {
                return(AS)        
              }
 }
-
-
-

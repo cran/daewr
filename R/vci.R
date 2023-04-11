@@ -1,13 +1,13 @@
 vci<-function(confl,c1,ms1,nu1,c2,ms2,nu2){
   delta<-c1*ms1-c2*ms2
   alpha<-1-confl
-  Falpha1<-qf(confl,nu1,10000000)
-  Falpha12<-qf(confl,nu1,nu2)
-  Fconf2<-qf(alpha,nu2,10000000)
-  Fconf12<-qf(alpha,nu1,nu2)
-  Falpha2<-qf(confl,nu2,10000000)
-  Fconf1<-qf(alpha,nu1,10000000)
-  Fconf12<-qf(alpha,nu1,nu2)
+  Falpha1<-stats::qf(confl,nu1,10000000)
+  Falpha12<-stats::qf(confl,nu1,nu2)
+  Fconf2<-stats::qf(alpha,nu2,10000000)
+  Fconf12<-stats::qf(alpha,nu1,nu2)
+  Falpha2<-stats::qf(confl,nu2,10000000)
+  Fconf1<-stats::qf(alpha,nu1,10000000)
+  Fconf12<-stats::qf(alpha,nu1,nu2)
   G1<-1-(1/Falpha1)
   H2<-(1/Fconf2)-1
   G12<-((Falpha12-1)**2-G1**2*Falpha12**2-H2**2)/Falpha12

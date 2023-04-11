@@ -28,10 +28,5 @@ with nu1 and nu2 degrees of freedom and noncentrality parameter nc
 John Lawson
 }
 %% ~Make other sections like Warning with \section{Warning }{....} ~
-\examples{
-Fpower(0.05,2,15,6.428)
 
-## The function is currently defined as
-function(alpha,nu1,nu2,nc) 1-pf(Fcrit(alpha,nu1,nu2),nu1,nu2,nc)
-}
 

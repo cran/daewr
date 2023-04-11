@@ -18,13 +18,13 @@ critL<-crittab[rowind,colind]
 # calculate Beta1, Beta2 and the Rn statistic
 acj<-abs(Beta)
 ranks<-rank(acj,ties.method="first")
-s0<-1.5*median(acj)
+s0<-1.5*stats::median(acj)
 p<-(ranks-.5)/length(Beta)
-z<-qnorm((p+1)/2)
-moda<-lm(acj~-1+z)
+z<-stats::qnorm((p+1)/2)
+moda<-stats::lm(acj~-1+z)
 beta1<-moda$coef
 sel<-acj<2.5*s0
-modi<-lm(acj[sel]~-1+z[sel])
+modi<-stats::lm(acj[sel]~-1+z[sel])
 beta2<-modi$coef
 Rn<-beta1/beta2
 # finds prediction limits for values in sorted absolute Beta
@@ -33,20 +33,20 @@ n<-length(acj[sel])
 df<-n-1
 sig<-sqrt(sum(modi$residuals^2)/df)
 se.pred<-sig*(1+1/n+(z^2)/sum(z[sel]^2))^.5
-pred.lim<-pred+qt(.975,df)*se.pred
+pred.lim<-pred+stats::qt(.975,df)*se.pred
 # gets significance indicators
 sigi<-c(rep("no",length(Beta)))
 sel2<-acj>pred.lim
 sigi[sel2]<-"yes"
  if (plt) {
 plot(z,acj,xlab="Half Normal Scores", ylab="Absoulute Effects")
-lines(sort(z),sort(pred),lty=1)
+graphics::lines(sort(z),sort(pred),lty=1)
          
  for (i in 1:length(Beta)) {
-   if (sigi[i]=="yes") text(z[i],acj[i],names(Beta)[i],pos=1)
+   if (sigi[i]=="yes") graphics::text(z[i],acj[i],names(Beta)[i],pos=1)
                            }
  if (pltl) {
-lines(sort(z),sort(pred.lim),lty=3)
+graphics::lines(sort(z),sort(pred.lim),lty=3)
            }           
           } 
  if (rpt) {

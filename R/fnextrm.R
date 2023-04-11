@@ -24,10 +24,10 @@ fnextrm<-function(y,des,prvm) {
     if(cmp){hmt<-c(t1,t3,term)}
     hmt<-union(hmt,prvm)
     d2<-data.frame(y=y,des[,hmt])
-    m2<-lm(y~(.),data=d2)
+    m2<-stats::lm(y~(.),data=d2)
     sm2<-summary(m2)
     sm2f<-sm2$fstatistic
-    pval[i]<-1-pf(sm2f[1],sm2f[2],sm2f[3])
+    pval[i]<-1-stats::pf(sm2f[1],sm2f[2],sm2f[3])
   }
  
   idx<-which.min(pval)

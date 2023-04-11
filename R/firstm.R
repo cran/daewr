@@ -20,10 +20,10 @@ for (i in 1:nmt) {
 #  print(i)   was used to check
 #  print(hmt)  was used to check
   d2<-data.frame(y=y,des[,hmt])
-  m2<-lm(y~(.),data=d2)
+  m2<-stats::lm(y~(.),data=d2)
   sm2<-summary(m2)
   sm2f<-sm2$fstatistic
-  pval[i]<-1-pf(sm2f[1],sm2f[2],sm2f[3])
+  pval[i]<-1-stats::pf(sm2f[1],sm2f[2],sm2f[3])
 #  print(pval[i])
 }
 # gets hierarchical model for term whose hierarchical model has the smallest pvalue

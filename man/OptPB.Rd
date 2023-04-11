@@ -22,7 +22,4 @@ Fairchild, K. (2011) "Screening Designs that Minimize Model Dependence", MS Proj
 John Lawson
 }
 
-\examples{
-OptPB(12,8)
-     }
 \keyword{ datagen }

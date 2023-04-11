@@ -21,13 +21,4 @@ Lawson, J. (2015) "Design and Analysis of Experiments with R page 229",CRC Press
 \author{
 John Lawson
 }
-
-\examples{
-PBDes(nruns=12,nfactors=11)
-PBDes(nruns=12,nfactors=11,randomize=TRUE)
-PBDes(nruns=12,nfactors=9)
-PBDes(nruns=20,nfactors=19)
-PBDes(nruns=24,nfact=16)
-PBDes(nruns=24,nfactors=23)
-     }
 \keyword{ datagen }
