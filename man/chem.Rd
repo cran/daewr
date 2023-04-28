@@ -14,7 +14,7 @@ of Experiments with R
 	\item{\code{B}}{a numeric vector containing the coded (-1,1) levels of factor B}
 	\item{\code{C}}{a numeric vector containing the coded (-1,1) levels of factor C}
 	\item{\code{D}}{a numeric vector containing the coded (-1,1) levels of factor D}
-    \item{\code{y}}{a numeric vector containing the response}
+    \item{\code{Y}}{a numeric vector containing the response}
   }
 }
 \source{

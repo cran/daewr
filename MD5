@@ -1,8 +1,8 @@
-6123dffa4aee4437498b36c2e6056951 *DESCRIPTION
-dc21c19f0d6968ee25d441b2cf46017d *NAMESPACE
+4b2eef1984ee0246732f78fc37c1a167 *DESCRIPTION
+df390c53434517b304ac5db487184641 *NAMESPACE
 2c294e0cc6c43bd3765fa9d843cf52eb *R/Altscreen.R
 bb9799eb7b583f6ea1253362119fae7a *R/BIBsize.R
-d313a110efe4939a69005c44301428be *R/DefScreen.R
+4a1e5ac72218f4d517d568adabeab1a5 *R/DefScreen.R
 ef9d354e3c4826fc8b8c9bd3c3bb0013 *R/EEw1s1.R
 05469596e9c714e9970d017796d94f7c *R/EEw1s2.R
 802d0dca6b03c75e14345abe37ab86f2 *R/EEw1s3.R
@@ -34,7 +34,9 @@ a3de164e50381f7addc477c8f14c57f3 *R/fullnormal.R
 f5dbf190ec34c85361f0f9e929bcee2c *R/gapstat.R
 1b3084f0db37212129053faf5904b71f *R/halfnorm.R
 17127a38bd840272a90b3876340881f1 *R/ihstep.R
+800b0b0e642f291d0250c293d1a83ffd *R/interleave.R
 bc3731af2e36ae0ad62e47578771d411 *R/mod.R
+eed2c1e2900041ccd9fa9258e382260a *R/stdord.R
 33a46d7a07326d0e460c9c3f2f91396a *R/vci.R
 3964da93b25dfaa340b20d264d8fa465 *data/Apo.rda
 359b06c3f934c812b99b71d1877b159c *data/BPmonitor.rda
@@ -61,7 +63,7 @@ b063ceb46fcded5ce31cec6ade0c5e27 *data/blood.rda
 29b35c5f67e87b7dc6f9e57c2a09bce3 *data/bread.rda
 dea290359a6546f62cd2a08153655ef7 *data/cakeb.rda
 cc68246d524873bf04a4eb0e827e990b *data/cement.rda
-78b9b6d34ee68fb0d3373f4e832d3d92 *data/chem.rda
+88eed757769e4b2153e0f322a0fb6d9c *data/chem.rda
 61e9efda0b62662ad060cd07ddf0e4a8 *data/chipman.rda
 0e5d6f77bada8a9a4245fe1a44900eb1 *data/connector.rda
 a51d764095946b5b7907435e6ecb6d9b *data/cont.rda
@@ -150,7 +152,7 @@ d8a144483fe5411938f2e3223c118394 *man/blood.Rd
 b1fe4da4557046c20772e05e19572396 *man/bread.Rd
 55828c47e5de4312bcba196c9badfb35 *man/cakeb.Rd
 b5711334c9ea0f4ff4d293cc7e2ae66d *man/cement.Rd
-da0ea790f8ae38fad346c0cf7dc6abb9 *man/chem.Rd
+0dfcf3ddfe52bd6af26ddb468f2df826 *man/chem.Rd
 1c0fc8ce7c539176b1100267924c8fc1 *man/chipman.Rd
 4268ecf443e9ac97345186c0167f09ef *man/colormap.Rd
 1355cf409b6114192ff945de76917bd6 *man/connector.Rd
@@ -176,6 +178,7 @@ e80a4287e5da698f302bbe061b1a49c3 *man/halfnorm.Rd
 2a2aad10f608a8c67372733350c49e60 *man/hardwood.Rd
 ef56a77f7f689f9cc2acd9171be4add5 *man/ihstep.Rd
 7b46826fe9048033413b8f6d8db517ce *man/inject.Rd
+7a4e2d4bf9ebfbb1775ebc0746ccbb6b *man/interleave.Rd
 f5a56fcb19b79dd762a8aa1dd44ddc62 *man/mod.Rd
 6f0c9a939b6a6f63cc2247aa3fc50ace *man/pastry.Rd
 4b9d982f081fb85091a15f7e20baa84d *man/pest.Rd
@@ -192,6 +195,7 @@ ded9bb1438505c379529b93bbc56619a *man/rubber.Rd
 4e16899e12e93b57b4450053efc5ba06 *man/soup.Rd
 316763132875fedba68f82fe66f36693 *man/soupmx.Rd
 4c3f288f24f64fa47acb580057073f25 *man/splitPdes.Rd
+c6cc129c5cf049facf67dc3c46465c00 *man/stdord.Rd
 26c3918aa56d706308127ee56e91f197 *man/strung.Rd
 bc8586f468482f7edf293e2fb37722c7 *man/strungtile.Rd
 0b87395e7243a6b87eaa2edc45668455 *man/sugarbeet.Rd

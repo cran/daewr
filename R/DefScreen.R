@@ -12,7 +12,7 @@ if (m==4) {
   f1 <- matrix(c(0,1,-1,-1,-1,0,-1,1,-1,-1,0,-1,-1,1,1,0), ncol=m,byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D")
@@ -23,7 +23,7 @@ if (m==5)  {
   f1 <- matrix(c(0,1,1,-1,-1, 1,0,-1,-1,1 ,1,-1,0,1,-1, 1,-1,1,0,1, 1,1,1,1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E")
@@ -34,7 +34,7 @@ if (m==6)     {
   f1 <- matrix(c(0,1,-1,-1,-1,-1,1,0,-1,1,1,-1,-1,-1,0,1,-1,-1,-1,1,1,0,1,-1,1,-1,1,-1,0,-1,1,1,1,1,-1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F")
@@ -46,7 +46,7 @@ if (m==7)     {
   -1,-1,1,1,0,-1,-1, -1,1,-1,1,1,0,1, 1,1,1,1,1,-1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G")
@@ -59,7 +59,7 @@ if (m==8)     {
   -1,1,1,-1,1,1,0,1, 1,1,1,1,1,-1,1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G","H")
@@ -74,7 +74,7 @@ if (m==9)     {
                  -1,1,1,-1,-1,1,-1,1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G","H","J")
@@ -89,7 +89,7 @@ if (m==10)     {
                  1,1,-1,-1,1,1,-1,-1,0,-1, 1,-1,1,-1,1,-1,1,-1,1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K")
@@ -105,7 +105,7 @@ if (m==11)     {
                  1,1,-1,1,-1,-1,-1,-1,-1,-1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
@@ -127,7 +127,7 @@ if (m==12)     {
                  1,-1,-1,1,-1,1,1,1,-1,-1,1,0), ncol=m, byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(m)
+  ord<-stdord(m)
   des <- des[ord , ]
   des <- rbind(des,c(rep(0,m)))
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M")
@@ -142,7 +142,7 @@ if (m==4)  {
                  1,1,1,-1,1, 1,-1,1,1,-1, 0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   #z <- rbind(c(rep(0,m),-1),c(rep(0,m),-1))
   #des <- rbind(des,z)
@@ -156,7 +156,7 @@ if (m==5)  {
                  0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   #z <- rbind(c(rep(0,m),-1),c(rep(0,m),-1))
   #des <- rbind(des,z)
@@ -171,7 +171,7 @@ if (m==6)  {
                 0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G")
   des <- data.frame(des)
@@ -184,7 +184,7 @@ if (m==7)  {
                  0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H")
   des <- data.frame(des)
@@ -198,7 +198,7 @@ if (m==8)  {
                  0,0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H","J")
   des <- data.frame(des)
@@ -212,7 +212,7 @@ if (m==9)  {
                0,0,0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K")
   des <- data.frame(des)
@@ -227,7 +227,7 @@ if (m==10)  {
                0,0,0,0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
   des <- data.frame(des)
@@ -242,7 +242,7 @@ if (m==11)  {
                0,0,0,0,0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M")
   des <- data.frame(des)
@@ -258,7 +258,7 @@ if (m==12)  {
                0,0,0,0,0,0,0,0,0,0,0,0,-1), ncol=(m+1), byrow=TRUE)
   f2 <- (-1)*f1
   des <- rbind(f1,f2)
-  ord<-std.ord(nrow(f1))
+  ord<-stdord(nrow(f1))
   des <- des[ord , ]
   colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N")
   des <- data.frame(des)
@@ -274,7 +274,7 @@ if (c==2)                    {
                    0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F")
     des <- data.frame(des)
@@ -287,7 +287,7 @@ if (c==2)                    {
                    0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G")
     des <- data.frame(des)
@@ -300,7 +300,7 @@ if (c==2)                    {
                  0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H")
     des <- data.frame(des)
@@ -314,7 +314,7 @@ if (c==2)                    {
                    0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J")
     des <- data.frame(des)
@@ -328,7 +328,7 @@ if (c==2)                    {
                  0,0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K")
     des <- data.frame(des)
@@ -343,7 +343,7 @@ if (c==2)                    {
                  0,0,0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
     des <- data.frame(des)
@@ -358,7 +358,7 @@ if (c==2)                    {
                    0,0,0,0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M")
     des <- data.frame(des)
@@ -374,7 +374,7 @@ if (c==2)                    {
                  0,0,0,0,0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N")
     des <- data.frame(des)
@@ -397,7 +397,7 @@ if (c==2)                    {
                    0,0,0,0,0,0,0,0,0,0,0,0,-1,-1), ncol=(m+2), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O")
     des <- data.frame(des)
@@ -417,7 +417,7 @@ if (c==3)                     {
                    0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G")
     des <- data.frame(des)
@@ -430,7 +430,7 @@ if (c==3)                     {
                  0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H")
     des <- data.frame(des)
@@ -444,7 +444,7 @@ if (c==3)                     {
                    0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J")
     des <- data.frame(des)
@@ -458,7 +458,7 @@ if (c==3)                     {
                    0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K")
     des <- data.frame(des)
@@ -473,7 +473,7 @@ if (c==3)                     {
                    0,0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
     des <- data.frame(des)
@@ -488,7 +488,7 @@ if (c==3)                     {
                  0,0,0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M")
     des <- data.frame(des)
@@ -504,7 +504,7 @@ if (c==3)                     {
                  0,0,0,0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N")
     des <- data.frame(des)
@@ -527,7 +527,7 @@ if (c==3)                     {
                  0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O")
     des <- data.frame(des)
@@ -552,7 +552,7 @@ if (c==3)                     {
                     0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1), ncol=(m+3), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O","P")
     des <- data.frame(des)
@@ -572,7 +572,7 @@ if (c==4)                     {
                    0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H")
     des <- data.frame(des)
@@ -586,7 +586,7 @@ if (c==4)                     {
                    0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J")
     des <- data.frame(des)
@@ -600,7 +600,7 @@ if (c==4)                     {
                    0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K")
     des <- data.frame(des)
@@ -615,7 +615,7 @@ if (c==4)                     {
                  0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L")
     des <- data.frame(des)
@@ -630,7 +630,7 @@ if (c==4)                     {
                  0,0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M")
     des <- data.frame(des)
@@ -646,7 +646,7 @@ if (c==4)                     {
                    0,0,0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N")
     des <- data.frame(des)
@@ -669,7 +669,7 @@ if (c==4)                     {
                    0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O")
     des <- data.frame(des)
@@ -694,7 +694,7 @@ if (c==4)                     {
                     0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O","P")
     des <- data.frame(des)
@@ -719,7 +719,7 @@ if (c==4)                     {
                     0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1), ncol=(m+4), byrow=TRUE)
     f2 <- (-1)*f1
     des <- rbind(f1,f2)
-    ord<-std.ord(nrow(f1))
+    ord<-stdord(nrow(f1))
     des <- des[ord , ]
     colnames(des) <- c("A","B","C","D","E","F","G","H","J","K","L","M","N","O","P","Q")
     des <- data.frame(des)
@@ -743,20 +743,6 @@ if (c==4)                     {
 return(des)
                                           }
 
-
-####Interleve function
-interleave <- function(v1,v2)
-{
-ord1 <- 2*(1:length(v1))-1
-ord2 <- 2*(1:length(v2))
-c(v1,v2)[order(c(ord1,ord2))]
-}
-### std.ord function
-std.ord <-function(m) {
-  v1 <- c(1:m)
-  v2 <- c((m+1):(2*m))
-  interleave(v1,v2)
-                      }
 
 
 
