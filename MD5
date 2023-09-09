@@ -1,5 +1,5 @@
-4b2eef1984ee0246732f78fc37c1a167 *DESCRIPTION
-df390c53434517b304ac5db487184641 *NAMESPACE
+dcbe8a1c3a2a499471b8b9b88409e5d4 *DESCRIPTION
+e1dc77bf9afbe0cdd18ba2b57473bc98 *NAMESPACE
 2c294e0cc6c43bd3765fa9d843cf52eb *R/Altscreen.R
 bb9799eb7b583f6ea1253362119fae7a *R/BIBsize.R
 4a1e5ac72218f4d517d568adabeab1a5 *R/DefScreen.R
@@ -63,7 +63,7 @@ b063ceb46fcded5ce31cec6ade0c5e27 *data/blood.rda
 29b35c5f67e87b7dc6f9e57c2a09bce3 *data/bread.rda
 dea290359a6546f62cd2a08153655ef7 *data/cakeb.rda
 cc68246d524873bf04a4eb0e827e990b *data/cement.rda
-88eed757769e4b2153e0f322a0fb6d9c *data/chem.rda
+57641d3cedcc53006ae12ce40bec2bbb *data/chem.rda
 61e9efda0b62662ad060cd07ddf0e4a8 *data/chipman.rda
 0e5d6f77bada8a9a4245fe1a44900eb1 *data/connector.rda
 a51d764095946b5b7907435e6ecb6d9b *data/cont.rda
@@ -152,14 +152,14 @@ d8a144483fe5411938f2e3223c118394 *man/blood.Rd
 b1fe4da4557046c20772e05e19572396 *man/bread.Rd
 55828c47e5de4312bcba196c9badfb35 *man/cakeb.Rd
 b5711334c9ea0f4ff4d293cc7e2ae66d *man/cement.Rd
-0dfcf3ddfe52bd6af26ddb468f2df826 *man/chem.Rd
+da0ea790f8ae38fad346c0cf7dc6abb9 *man/chem.Rd
 1c0fc8ce7c539176b1100267924c8fc1 *man/chipman.Rd
 4268ecf443e9ac97345186c0167f09ef *man/colormap.Rd
 1355cf409b6114192ff945de76917bd6 *man/connector.Rd
 42b3a43b22f498c83ed4a83410268492 *man/cont.Rd
 ad1a40a6b3bca34249686ee0a150db73 *man/cpipe.Rd
 7cfbc8e763ce2b6ac010675dddcdb08a *man/culture.Rd
-c555a5e59f96e1b857169d5a3fb73519 *man/daewr-package.Rd
+ff3d5da09a655945821fc31cbe535426 *man/daewr-package.Rd
 c5afa4131c987fd0cbded3db1cd94fad *man/dairy.Rd
 27d4fb9ed8941fea95106349199eeedb *man/drug.Rd
 83d5b592fe26f190da03975265c0fa2b *man/eptaxr.Rd

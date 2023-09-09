@@ -6,16 +6,6 @@
 \description{
 This package contains the data sets and functions from the book Design and Analysis of Experiments with R published by CRC in 2013.
 }
-\details{
-\tabular{ll}{
-Package: \tab daewr\cr
-Type: \tab Package\cr
-Version: \tab 1.2-5\cr
-Date: \tab 2012-05-10\cr
-License: \tab GPL-2\cr
-LazyLoad: \tab yes\cr
-}
-}
 \author{
 John Lawson
 
